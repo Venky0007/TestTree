@@ -29,7 +29,7 @@ namespace TestQA
              IWebElement options = driver.FindElement(By.Name("url"));
             SelectElement element = new SelectElement(options);
             element.SelectByText("Books");//select by index
-            
+            //Identifying the search button
             IWebElement search = driver.FindElement(By.XPath("//input[@value='Go']"));
             search.Click();
             //identifying the first book
