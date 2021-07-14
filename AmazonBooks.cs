@@ -32,6 +32,7 @@ namespace TestQA
             
             IWebElement search = driver.FindElement(By.XPath("//input[@value='Go']"));
             search.Click();
+            //identifying the first book
             IWebElement firstbook = driver.FindElement(By.XPath("//div[@id='anonCarousel1']//div[@id='acs-product-block-0']"));
             firstbook.Click();
             Console.WriteLine("Clicked the 1st Book");
