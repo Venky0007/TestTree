@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,37 +7,29 @@ using System.Threading.Tasks;
 
 namespace TestQA
 {
-    class LoginPOM
+    public class LoginPOM
     {
-       /* public LoginPOM()
+        IWebDriver driver;
+        By UserName = By.Name("email");
+        By PassWord = By.XPath("//*[@type='password']");
+        By LoginButton = By.Name("login");
+
+        public LoginPOM(IWebDriver driver)
         {
-            PageFactory.InitElements(PropertiesCollection.driver,this);
+            this.driver = driver;
+        }
 
-            [FindsBy(How = How.Name, Using = "UserName")]
-
-            public IWebElement txtUserName { get; set; }
-
-            [FindsBy(How = How.Name, Using ="Password")]
-
-            public IWebElement txtPassword { get; set; }
-
-
-            [FindsBy(How = How.Name, Using = "Login")]
-
-            public IWebElement btnLogin { get; set; }
-
-            public EAPOM Login(string userName, string password)
-            {
-                //Username
-                txtUserName.SendKeys(userName);
-                //password
-                txtUserName.SendKeys(password);
-                //click button
-                btnLogin.Submit();
-                //Return the page object
-                return new EAPOM();
-
-            }
-        }*/
+        public void TypeUserName()
+        {
+            driver.FindElement(UserName).SendKeys("Venky");
+        }
+        public void TypePassword()
+        {
+            driver.FindElement(PassWord).SendKeys("Venky@9999");
+        }
+        public void ClickOnLoginButton()
+        {
+            driver.FindElement(LoginButton).Click();
+        }
     }
 }

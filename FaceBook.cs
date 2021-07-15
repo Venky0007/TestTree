@@ -7,7 +7,7 @@ using System.Threading;
 namespace TestQA
 {
     [TestClass]
-    public class UnitTest1
+    public class FaceBook
     {
         
         public void TestMethod1()
