@@ -87,6 +87,10 @@
     <Compile Include="IWebDrivar.cs" />
     <Compile Include="LoginPOM.cs" />
     <Compile Include="LoginPOMPF.cs" />
+    <Compile Include="Page Object Model\AmazonPOM.cs" />
+    <Compile Include="Page Object Model\RegistrationPOM.cs" />
+    <Compile Include="Page Object Model\TestAmazonPOM.cs" />
+    <Compile Include="Page Object Model\TestRegistrationPOM.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="PropertiesCollection.cs" />
     <Compile Include="ReusableGetMethods.cs" />
