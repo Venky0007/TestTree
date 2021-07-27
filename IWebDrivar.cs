@@ -7,5 +7,6 @@ namespace TestQA
         object FindElement(By by);
         void Close();
         object Navigate();
+
     }
 }
